@@ -1,3 +1,5 @@
+import ToggleTheme from "./ToggleTheme";
+
 export default function Navbar() {
   return (
     <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
@@ -54,6 +56,7 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+        <ToggleTheme />
         <div
           id="navbar-collapse-with-animation"
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
