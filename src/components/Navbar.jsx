@@ -56,7 +56,6 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <ToggleTheme />
         <div
           id="navbar-collapse-with-animation"
           className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
@@ -87,6 +86,7 @@ export default function Navbar() {
             >
               Blog
             </a>
+            <ToggleTheme />
           </div>
         </div>
       </nav>
