@@ -1,5 +1,5 @@
 export default function Layout({ children }) {
   return (
-    <div>{children}</div>
-  )
+    <div className="h-screen bg-slate-50 dark:bg-slate-900">{children}</div>
+  );
 }

@@ -1,17 +1,30 @@
-import Layout from '../../components/Layout'
-import Navbar from '../../components/Navbar'
+import { useRoutes, BrowserRouter } from "react-router-dom";
+import Layout from '../../components/Layout';
+import Navbar from '../../components/Navbar';
+import Home from '../Home';
 
+const AppRoutes = () => {
+  const routes = useRoutes([
+    { path: "/", element: <Home /> },
+    // { path: "/shopping-cart", element: <Home />},
+    // { path: "/sign-in", element: <SignIn /> },
+    // { path: "/*", element: <NotFound /> },
+
+  ]);
+  return routes;
+};
 const App = () => {
   return (
     <>
-      <Layout>
+    <BrowserRouter>
+    <Layout>
         <Navbar />
-        <div className='h-screen bg-slate-50 dark:bg-slate-900'>
-          <h1>App</h1>
-        </div>
+          <AppRoutes />
       </Layout>
+    </BrowserRouter>
+      
     </>
   )
 }
 
-export default App
+export default App;
