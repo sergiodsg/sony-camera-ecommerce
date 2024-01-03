@@ -121,10 +121,10 @@ export default function Navbar() {
             </div>
             {/* Dropdown */}
             <button className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500">
-              <div className="flex items-center gap-x-1.5">
+              <Link to='shopping-cart' className="flex items-center gap-x-1.5">
                 Shopping cart
                 <span className="material-icons-outlined text-xl">shopping_cart</span>
-              </div>
+              </Link>
             </button>
             <button className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500">
               <div className="flex items-center gap-x-1.5">
