@@ -1,4 +1,5 @@
 import ToggleTheme from "../ToggleTheme";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -8,9 +9,9 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
-          <a
+          <Link
             className="flex-none text-xl font-semibold dark:text-white"
-            href="#"
+            to="/"
           >
             <svg
               className="fill-current text-black dark:text-white"
@@ -28,7 +29,7 @@ export default function Navbar() {
                 <path d="m-527.31 300.06c-11.738 0-24.202 4.064-31.246 10.464a26.016 26.016 0 0 0-8.501 19.298 25.637 25.637 0 0 0 8.5 19.365c7.587 6.82 18.967 10.478 31.247 10.478 12.3 0 23.923-3.617 31.327-10.478a26.863 26.863 0 0 0 8.384-19.365 25.773 25.773 0 0 0-8.384-19.283c-7.946-7.207-18.343-10.479-31.327-10.479zm0 7.748c6.421 0 12.605 2.31 16.77 6.409 4.03 3.969 6.136 9.577 6.136 15.578 0 6.286-1.916 11.38-6.135 15.579-4.22 4.2-10.262 6.448-16.771 6.448-6.462 0-12.633-2.296-16.798-6.448a21.79 21.79 0 0 1-6.096-15.579c0-5.974 2.079-11.602 6.096-15.578 4.165-4.119 10.377-6.409 16.798-6.409z" />
               </g>
             </svg>
-          </a>
+          </Link>
           <div className="sm:hidden">
             <button
               type="button"
@@ -104,30 +105,26 @@ export default function Navbar() {
                 className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full z-10"
                 aria-labelledby="hs-dropdown-hover-event"
               >
-                <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                  href="#"
+                <button
+                  className="flex items-center gap-x-3.5 py-2 px-3 w-full rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
                 >
-                  Newsletter
-                </a>
-                <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                  href="#"
+                  Televisions
+                </button>
+                <button
+                  className="flex items-center gap-x-3.5 py-2 px-3 w-full rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
                 >
-                  Purchases
-                </a>
-                <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                  href="#"
+                  Audio
+                </button>
+                <button
+                  className="flex items-center gap-x-3.5 py-2 px-3 w-full rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
                 >
-                  Downloads
-                </a>
-                <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                  href="#"
+                  Cameras
+                </button>
+                <button
+                  className="flex items-center gap-x-3.5 py-2 px-3 w-full rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
                 >
-                  Team Account
-                </a>
+                  Playstation
+                </button>
               </div>
             </div>
             {/* Dropdown */}
