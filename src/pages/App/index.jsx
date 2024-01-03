@@ -19,8 +19,8 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Layout>
-          <Navbar />
           <AppRoutes />
         </Layout>
       </BrowserRouter>
