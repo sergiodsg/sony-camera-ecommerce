@@ -1,14 +1,15 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar";
+import NotFound from "../../components/NotFound";
 import Home from "../Home";
 
 const AppRoutes = () => {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
-    // { path: "/shopping-cart", element: <Home />},
+    { path: "/shopping-cart", element: <Home />},
     // { path: "/sign-in", element: <SignIn /> },
-    // { path: "/*", element: <NotFound /> },
+    { path: "/*", element: <NotFound /> }
   ]);
   return routes;
 };
