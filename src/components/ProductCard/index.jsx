@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
-export default function ProductCard({ name, price, category, description, image}) {
+export default function ProductCard({ id, name, price, category, description, image}) {
   return (
     <Link
       className="flex flex-col group bg-white border shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]"
-      to="/"
+      to={`/product/${id}`}
     >
       <div className="relative pt-[50%] sm:pt-[60%] lg:pt-[80%] rounded-t-xl overflow-hidden">
         <img
