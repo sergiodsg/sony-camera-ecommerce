@@ -23,7 +23,7 @@ export default function ProductCard() {
           </h3>
         </div>
         <div className="flex">
-          <div className="text-sm">
+          <div className="text-sm text-gray-800 dark:text-white">
             Cameras
           </div>
         </div>
