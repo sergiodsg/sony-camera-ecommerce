@@ -1,7 +1,7 @@
 export const initialProducts = [
   {
     id: 1,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -11,7 +11,7 @@ export const initialProducts = [
   },
   {
     id: 2,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -21,7 +21,7 @@ export const initialProducts = [
   },
   {
     id: 3,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -31,7 +31,7 @@ export const initialProducts = [
   },
   {
     id: 4,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -41,7 +41,7 @@ export const initialProducts = [
   },
   {
     id: 5,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -51,7 +51,7 @@ export const initialProducts = [
   },
   {
     id: 6,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -61,7 +61,7 @@ export const initialProducts = [
   },
   {
     id: 7,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -71,7 +71,7 @@ export const initialProducts = [
   },
   {
     id: 8,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -81,7 +81,7 @@ export const initialProducts = [
   },
   {
     id: 9,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -91,7 +91,7 @@ export const initialProducts = [
   },
   {
     id: 10,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
@@ -101,7 +101,7 @@ export const initialProducts = [
   },
   {
     id: 11,
-    name: "Sony a6000",
+    name: "Sony α6000",
     price: 300,
     category: "Cameras",
     description:
