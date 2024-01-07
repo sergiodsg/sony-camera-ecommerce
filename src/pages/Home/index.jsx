@@ -1,10 +1,19 @@
+import { useContext } from "react";
 import ProductCard from "../../components/ProductCard";
+import { MyContext } from "../../context";
 
 export default function Home() {
+  const context = useContext(MyContext);
+
   return (
     <div>
       <div className="flex flex-wrap justify-center">
-        <div className="sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+        {context.products.map((product) => 
+          <div key={product.id} className="sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <ProductCard />
+          </div>
+        )}
+        {/* <div className="sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
           <ProductCard />
         </div>
         <div className="sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
@@ -33,7 +42,7 @@ export default function Home() {
         </div>
         <div className="sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
           <ProductCard />
-        </div>
+        </div> */}
       </div>
     </div>
   );

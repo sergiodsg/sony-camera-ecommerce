@@ -1,4 +1,5 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
+import { MyContextProvider } from "../../context";
 import Home from "../Home";
 import ShoppingCart from "../ShoppingCart";
 import Layout from "../../components/Layout";
@@ -8,9 +9,9 @@ import NotFound from "../../components/NotFound";
 const AppRoutes = () => {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/shopping-cart", element: <ShoppingCart />},
+    { path: "/shopping-cart", element: <ShoppingCart /> },
     // { path: "/sign-in", element: <SignIn /> },
-    { path: "/*", element: <NotFound /> }
+    { path: "/*", element: <NotFound /> },
   ]);
   return routes;
 };
@@ -18,12 +19,14 @@ const AppRoutes = () => {
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Navbar />
-        <Layout>
-          <AppRoutes />
-        </Layout>
-      </BrowserRouter>
+      <MyContextProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Layout>
+            <AppRoutes />
+          </Layout>
+        </BrowserRouter>
+      </MyContextProvider>
     </>
   );
 };
