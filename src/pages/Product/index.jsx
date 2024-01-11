@@ -11,14 +11,20 @@ export default function Product() {
     if (context.products) {
       setProduct(context.products.find((product) => product.id === Number(id)));
     }
-  }, [context.products]);
+  }, [context.products, id]);
 
   return (
     <div className="flex flex-wrap w-screen p-4">
+      
+      <img src="src/assets/Sony-7C.webp" alt="" />
       {product && (
         <>
           <div className="w-full sm:w-1/2 p-4 bg-white border shadow-sm rounded-xl overflow-hidden dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-            hola
+            <img
+              className="top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+              src={product.image}
+              alt="Image Description"
+            />
           </div>
           <div className="w-full sm:w-1/2 p-4">
             <h2 className="text-xl font-bold text-gray-800 dark:text-white">

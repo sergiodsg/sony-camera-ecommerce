@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect } from "react";
-import { initialProducts } from "../utils/initialProducts";
 
 // Create the context
 export const MyContext = createContext();
@@ -10,9 +9,15 @@ export const MyContextProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
 
   // Define any functions or methods you need
-  const getProducts = () => {
+  const getProducts = async () => {
     // Fetch the products from an API
-    setProducts(initialProducts);
+    const response = await fetch("https://sony-ecommerce.onrender.com/api/products", {
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+    const data = await response.json();
+    setProducts(data);
   };
 
   useEffect(() => {
