@@ -25,7 +25,7 @@ const App = () => {
         <BrowserRouter>
           <Navbar />
           <Layout>
-            <div className="fixed h-screen overflow-auto pb-16">
+            <div className="fixed h-screen w-screen overflow-auto pb-16">
               <AppRoutes />
             </div>
           </Layout>
