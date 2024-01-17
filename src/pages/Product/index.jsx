@@ -44,13 +44,13 @@ export default function Product() {
                 type="button"
                 className="py-4 px-4 mx-4 w-1/3 inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-500 text-white hover:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               >
-                Button
+                Add to Cart
               </button>
               <button
                 type="button"
                 className="py-4 px-4 mx-4 w-1/3 inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 dark:bg-white dark:text-gray-800"
               >
-                Button
+                Buy
               </button>
             </div>
           </div>
