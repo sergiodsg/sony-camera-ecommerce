@@ -3,6 +3,7 @@ import { MyContextProvider } from "../../context";
 import Home from "../Home";
 import ShoppingCart from "../ShoppingCart";
 import Product from "../Product";
+import Account from "../Account";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar";
 import NotFound from "../../components/NotFound";
@@ -12,7 +13,7 @@ const AppRoutes = () => {
     { path: "/", element: <Home /> },
     { path: "/product/:id", element: <Product /> },
     { path: "/shopping-cart", element: <ShoppingCart /> },
-    // { path: "/sign-in", element: <SignIn /> },
+    { path: "/account", element: <Account /> },
     { path: "/*", element: <NotFound /> },
   ]);
   return routes;

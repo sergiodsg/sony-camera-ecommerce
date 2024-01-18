@@ -127,10 +127,10 @@ export default function Navbar() {
               </Link>
             </button>
             <button className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500">
-              <div className="flex items-center gap-x-1.5">
+              <Link to='account' className="flex items-center gap-x-1.5">
                 Account
                 <span className="material-icons-outlined text-xl">person</span>
-              </div>
+              </Link>
             </button>
             <ToggleTheme />
           </div>
