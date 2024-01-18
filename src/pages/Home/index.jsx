@@ -16,7 +16,7 @@ export default function Home() {
               </div>
             ))
          : (
-          context.products?.map((product, index) => (
+          context.filteredProducts?.map((product, index) => (
             <div key={index} className="sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
               <ProductCard
                 id={product.id}
