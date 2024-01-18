@@ -14,8 +14,8 @@ export const MyContextProvider = ({ children }) => {
 
   // Define any functions or methods you need
   const getProducts = async () => {
+    setLoading(true);
     try {
-      setLoading(true);
       // Fetch the products from an API
       const response = await fetch("https://sony-ecommerce.onrender.com/api/products", {
         headers: {
@@ -26,14 +26,14 @@ export const MyContextProvider = ({ children }) => {
       setProducts(data);
       if (filter === "all") {
         setFilteredProducts(data);
-        setLoading(false);
       } else {
         setFilteredProducts(data.filter((product) => product.category === filter));
-        setLoading(false);
       }
     } catch (error) {
       console.error('Error fetching products:', error);
       setError(true);
+    } finally {
+      setLoading(false);
     }
   };
 
