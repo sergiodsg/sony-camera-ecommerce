@@ -45,10 +45,9 @@ export const MyContextProvider = ({ children }) => {
 
   const addProductToCart = (id) => {
     const product = products.find((product) => product.id === id);
-    setCart([...cart, product]);
-    console.log(cart);
+    setCart((currentCart) => [...currentCart, product]);
   };
-
+  
   const removeProductFromCart = (index) => {
     setCart((currentCart) => {
       const cartCopy = [...currentCart];
@@ -56,6 +55,8 @@ export const MyContextProvider = ({ children }) => {
       return cartCopy;
     });
   };
+
+  const totalCart = cart.reduce((total, product) => total + product.price, 0);
 
   useEffect(() => {
     getProducts();
@@ -75,6 +76,7 @@ export const MyContextProvider = ({ children }) => {
         cart,
         addProductToCart,
         removeProductFromCart,
+        totalCart
       }}
     >
       {children}
