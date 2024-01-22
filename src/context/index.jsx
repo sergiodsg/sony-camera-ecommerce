@@ -49,9 +49,12 @@ export const MyContextProvider = ({ children }) => {
     console.log(cart);
   };
 
-  const removeProductFromCart = (id) => {
-    setCart(cart.filter((product) => product.id !== id));
-    console.log(cart);
+  const removeProductFromCart = (index) => {
+    setCart((currentCart) => {
+      const cartCopy = [...currentCart];
+      cartCopy.splice(index, 1);
+      return cartCopy;
+    });
   };
 
   useEffect(() => {
