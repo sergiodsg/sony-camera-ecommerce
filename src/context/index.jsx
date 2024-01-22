@@ -37,17 +37,8 @@ export const MyContextProvider = ({ children }) => {
     }
   };
 
-  // const filterProducts = () => {
-  //   if (filter === "all") {
-  //     setFilteredProducts(products);
-  //   } else {
-  //     setFilteredProducts(products.filter((product) => product.category === filter));
-  //   }
-  // };
-
   useEffect(() => {
     getProducts();
-    // filterProducts();
   }, [filter]);
 
 
