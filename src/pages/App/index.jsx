@@ -1,4 +1,4 @@
-import { useRoutes, BrowserRouter } from "react-router-dom";
+import { useRoutes, HashRouter } from "react-router-dom";
 import { MyContextProvider } from "../../context";
 import Home from "../Home";
 import ShoppingCart from "../ShoppingCart";
@@ -23,14 +23,14 @@ const App = () => {
   return (
     <>
       <MyContextProvider>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <Layout>
             <div className="fixed h-screen w-screen overflow-auto pb-16">
               <AppRoutes />
             </div>
           </Layout>
-        </BrowserRouter>
+        </HashRouter>
       </MyContextProvider>
     </>
   );
