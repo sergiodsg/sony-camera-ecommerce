@@ -7,6 +7,7 @@ import Account from "../Account";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar";
 import NotFound from "../../components/NotFound";
+import NewNavbar from "../../components/NewNavbar";
 
 const AppRoutes = () => {
   const routes = useRoutes([
@@ -24,7 +25,8 @@ const App = () => {
     <>
       <MyContextProvider>
         <HashRouter>
-          <Navbar />
+          {/* <Navbar /> */}
+          <NewNavbar />
           <Layout>
             <div className="fixed h-screen w-screen overflow-auto pb-16">
               <AppRoutes />
