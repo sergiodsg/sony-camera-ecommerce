@@ -104,23 +104,45 @@ export default function NewNavbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-          <li>
             <details>
-              <summary>Parent</summary>
+              <summary>Categories</summary>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <Link to="/" onClick={() => context.setFilter("all")}>
+                    <a>All</a>
+                  </Link>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <Link to="/" onClick={() => context.setFilter("Audio")}>
+                    <a>Audio</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => context.setFilter("Cameras")}>
+                    <a>Cameras</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" onClick={() => context.setFilter("Playstation")}>
+                    <a>Playstation</a>
+                  </Link>
                 </li>
               </ul>
             </details>
+          </li>
+          <li>
+            <Link to="shopping-cart" className="flex items-center gap-x-1.5">
+              Shopping cart
+              <span className="material-icons-outlined text-sm">
+                shopping_cart
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link to="account" className="flex items-center gap-x-1.5">
+              Account
+              <span className="material-icons-outlined text-sm">person</span>
+            </Link>
           </li>
         </ul>
       </div>
