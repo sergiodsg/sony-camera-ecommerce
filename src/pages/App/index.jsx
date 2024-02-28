@@ -26,11 +26,13 @@ const App = () => {
       <MyContextProvider>
         <HashRouter>
           {/* <Navbar /> */}
-          <NewNavbar />
+          <div className="fixed w-full z-50 bg-white dark:bg-gray-800"> 
+            <NewNavbar />
+          </div>
           <Layout>
-            <div className="fixed h-screen w-screen overflow-auto pb-16">
+            {/* <div className="fixed h-screen w-screen overflow-auto pb-16"> */}
               <AppRoutes />
-            </div>
+            {/* </div> */}
           </Layout>
         </HashRouter>
       </MyContextProvider>
