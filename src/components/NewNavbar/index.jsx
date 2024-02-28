@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { MyContext } from "../../context";
 import { Link } from "react-router-dom";
-import ToggleTheme from "../ToggleTheme";
 
 export default function NewNavbar() {
   const context = useContext(MyContext);
@@ -147,8 +146,7 @@ export default function NewNavbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        {/* <input type="checkbox" value="dark" className="toggle theme-controller"/> */}
-        <ToggleTheme />
+        
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { MyContext } from "../../context";
-import ToggleTheme from "../ToggleTheme";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -160,7 +159,6 @@ export default function Navbar() {
                 <span className="material-icons-outlined text-xl">person</span>
               </Link>
             </button>
-            <ToggleTheme />
           </div>
         </div>
       </nav>
