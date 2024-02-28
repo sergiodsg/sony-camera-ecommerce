@@ -32,45 +32,45 @@ export default function NewNavbar() {
           >
             <li>
               <Link to="shopping-cart" className="flex items-center gap-x-1.5">
-                <a>
+
                   Shopping cart
                   <span className="material-icons-outlined text-xl">
                     shopping_cart
                   </span>
-                </a>
+
               </Link>
             </li>
             <li>
               <Link to="account" className="flex items-center gap-x-1.5">
-                <a>
+
                   Account
                   <span className="material-icons-outlined text-xl">
                     person
                   </span>
-                </a>
+
               </Link>
             </li>
             <li>
-              <a>Categories</a>
+              Categories
               <ul className="p-2">
                 <li>
                   <Link to="/" onClick={() => context.setFilter("all")}>
-                    <a>All</a>
+                    All
                   </Link>
                 </li>
                 <li>
                   <Link to="/" onClick={() => context.setFilter("Audio")}>
-                    <a>Audio</a>
+                    Audio
                   </Link>
                 </li>
                 <li>
                   <Link to="/" onClick={() => context.setFilter("Cameras")}>
-                    <a>Cameras</a>
+                    Cameras
                   </Link>
                 </li>
                 <li>
                   <Link to="/" onClick={() => context.setFilter("Playstation")}>
-                    <a>Playstation</a>
+                    Playstation
                   </Link>
                 </li>
               </ul>
@@ -109,22 +109,22 @@ export default function NewNavbar() {
               <ul className="p-2">
                 <li>
                   <Link to="/" onClick={() => context.setFilter("all")}>
-                    <a>All</a>
+                    All
                   </Link>
                 </li>
                 <li>
                   <Link to="/" onClick={() => context.setFilter("Audio")}>
-                    <a>Audio</a>
+                    Audio
                   </Link>
                 </li>
                 <li>
                   <Link to="/" onClick={() => context.setFilter("Cameras")}>
-                    <a>Cameras</a>
+                    Cameras
                   </Link>
                 </li>
                 <li>
                   <Link to="/" onClick={() => context.setFilter("Playstation")}>
-                    <a>Playstation</a>
+                    Playstation
                   </Link>
                 </li>
               </ul>
@@ -147,6 +147,7 @@ export default function NewNavbar() {
         </ul>
       </div>
       <div className="navbar-end">
+        {/* <input type="checkbox" value="dark" className="toggle theme-controller"/> */}
         <ToggleTheme />
       </div>
     </div>
