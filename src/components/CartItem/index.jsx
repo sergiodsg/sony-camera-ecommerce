@@ -6,7 +6,7 @@ export default function CartItem({
 }) {
 
   return (
-    <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+    <div>
       <div className="flex p-4 h-36 gap-x-4 bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
         <div className="w-full">
           <img
