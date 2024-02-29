@@ -5,9 +5,8 @@ import ShoppingCart from "../ShoppingCart";
 import Product from "../Product";
 import Account from "../Account";
 import Layout from "../../components/Layout";
-import Navbar from "../../components/Navbar";
 import NotFound from "../../components/NotFound";
-import NewNavbar from "../../components/NewNavbar";
+import Navbar from "../../components/Navbar";
 
 const AppRoutes = () => {
   const routes = useRoutes([
@@ -25,9 +24,8 @@ const App = () => {
     <>
       <MyContextProvider>
         <HashRouter>
-          {/* <Navbar /> */}
           <div className="fixed w-full z-50 bg-white dark:bg-gray-800"> 
-            <NewNavbar />
+            <Navbar />
           </div>
           <Layout>
             {/* <div className="fixed h-screen w-screen overflow-auto pb-16"> */}
