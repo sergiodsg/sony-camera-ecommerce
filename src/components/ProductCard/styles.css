@@ -1,0 +1,5 @@
+.product-card-width {
+  @media(width <= 640px){
+    width: 19rem;
+  }
+}
