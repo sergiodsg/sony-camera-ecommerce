@@ -44,7 +44,10 @@ export default function ShoppingCart() {
     });
 
   return (
-    <animated.div style={animationProps} className="flex flex-wrap justify-center">
+    <animated.div
+      style={animationProps}
+      className="flex flex-wrap justify-center"
+    >
       <ToastContainer />
       {context.cart?.length > 0 ? (
         <>
@@ -105,10 +108,18 @@ export default function ShoppingCart() {
           </div>
         </>
       ) : (
-        <div className="flex justify-center items-center w-full h-96">
-          <div className=" text-3xl font-bold text-gray-600 dark:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-            The shopping cart is empty :(
+        <div className="flex justify-center items-center w-full h-[calc(80vh)]">
+          <div className="flex w-full justify-center p-5">
+            <div
+              className="bg-gray-100 border border-gray-200 text-xl text-gray-800 rounded-lg p-4 dark:bg-white/10 dark:border-white/20 dark:text-white"
+              role="alert"
+            >
+              <span className="font-bold">🛒 Shopping cart is empty</span>
+            </div>
           </div>
+          {/* <div className=" text-3xl font-bold text-gray-600 dark:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+            The shopping cart is empty :(
+          </div> */}
         </div>
       )}
     </animated.div>
