@@ -1,6 +1,8 @@
 import { useState, useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { MyContext } from "../../context";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Product() {
   const { id } = useParams();
@@ -12,6 +14,30 @@ export default function Product() {
       setProduct(context.products.find((product) => product.id === Number(id)));
     }
   }, [context.products, id]);
+
+  const notifyCart = () =>
+    toast.success("Successfully added", {
+      position: "bottom-center",
+      autoClose: 4000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
+    const notifyBuy = () =>
+    toast.info("Remember this is not a real store 😉", {
+      position: "bottom-center",
+      autoClose: 4000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
 
   return (
     <div className="flex flex-wrap w-screen p-4">
@@ -43,18 +69,27 @@ export default function Product() {
               <button
                 type="button"
                 className="py-4 px-4 mx-4 w-1/3 min-w-max inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-500 text-white hover:bg-gray-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                onClick={() => context.addProductToCart(Number(id))}
+                onClick={() => {
+                  context.addProductToCart(Number(id));
+                  notifyCart();
+                }}
               >
                 Add to Cart
-                <span className="material-icons-outlined text-xl">shopping_cart</span>
+                <span className="material-icons-outlined text-xl">
+                  shopping_cart
+                </span>
               </button>
               <button
                 type="button"
                 className="py-4 px-4 mx-4 w-1/3 min-w-max inline-flex items-center justify-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-800 text-white hover:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 dark:bg-white dark:text-gray-800 dark:hover:bg-gray-200"
+                onClick={() => notifyBuy()}
               >
                 Buy
-                <span className="material-icons-outlined text-xl">shopping_bag</span>
+                <span className="material-icons-outlined text-xl">
+                  shopping_bag
+                </span>
               </button>
+              <ToastContainer />
             </div>
           </div>
         </>
