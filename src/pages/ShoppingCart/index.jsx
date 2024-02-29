@@ -1,12 +1,17 @@
 import { useContext } from "react";
 import { MyContext } from "../../context";
 import CartItem from "../../components/CartItem";
-import { useTrail, animated } from "react-spring";
+import { useSpring, useTrail, animated } from "react-spring";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ShoppingCart() {
   const context = useContext(MyContext);
+
+  const animationProps = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  });
 
   const trail = useTrail(context.cart?.length || 0, {
     from: { opacity: 0 },
@@ -39,7 +44,7 @@ export default function ShoppingCart() {
     });
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <animated.div style={animationProps} className="flex flex-wrap justify-center">
       <ToastContainer />
       {context.cart?.length > 0 ? (
         <>
@@ -106,6 +111,6 @@ export default function ShoppingCart() {
           </div>
         </div>
       )}
-    </div>
+    </animated.div>
   );
 }

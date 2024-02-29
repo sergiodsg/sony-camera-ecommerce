@@ -1,8 +1,15 @@
 import Disclaimer from "../../components/Disclaimer";
+import { useSpring, animated } from "react-spring";
 
 export default function Account() {
+
+  const animationProps = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  });
+
   return (
-    <div className="flex flex-wrap w-screen p-5">
+    <animated.div style={animationProps} className="flex flex-wrap w-screen p-5">
       <div className="w-full sm:w-1/4 flex justify-center">
         {/* Avatar */}
         <span className="inline-block h-[18rem] w-[18rem] bg-gray-100 rounded-full overflow-hidden">
@@ -130,6 +137,6 @@ export default function Account() {
       <div className="flex justify-center items-end w-full h-44">
         <Disclaimer />
       </div>
-    </div>
+    </animated.div>
   );
 }
