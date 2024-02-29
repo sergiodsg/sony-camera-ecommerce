@@ -30,7 +30,7 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to="shopping-cart" className="flex items-center gap-x-1.5">
+              <Link to="shopping-cart" className="flex items-center">
 
                   Shopping cart
                   <span className="material-icons-outlined text-xl">
@@ -40,7 +40,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="account" className="flex items-center gap-x-1.5">
+              <Link to="account" className="flex items-center">
 
                   Account
                   <span className="material-icons-outlined text-xl">
@@ -49,7 +49,7 @@ export default function Navbar() {
 
               </Link>
             </li>
-            <li>
+            <li className="pt-2 pl-3">
               Categories
               <ul className="p-2">
                 <li>
@@ -80,7 +80,7 @@ export default function Navbar() {
           className="flex-none text-xl font-semibold dark:text-white"
           to="/"
         >
-          <button onClick={() => context.setFilter("all")}>
+          <button className="pl-2 pt-1" onClick={() => context.setFilter("all")}>
             <svg
               className="fill-current text-black dark:text-white"
               width="128"
