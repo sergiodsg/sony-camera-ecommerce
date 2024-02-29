@@ -43,7 +43,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="Tom"
               readOnly
             />
           </div>
@@ -55,7 +55,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="Velez"
               readOnly
             />
           </div>
@@ -69,7 +69,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="tomvelez@email.com"
               readOnly
             />
           </div>
@@ -81,7 +81,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="+1 123 456 7890"
               readOnly
             />
           </div>
@@ -95,7 +95,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="Seattle"
               readOnly
             />
           </div>
@@ -107,7 +107,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="98101"
               readOnly
             />
           </div>
@@ -121,7 +121,7 @@ export default function Account() {
             <input
               type="text"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Readonly input"
+              placeholder="2015 Brannon Avenue"
               readOnly
             />
           </div>
