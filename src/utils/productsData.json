@@ -5,7 +5,7 @@
     "price": 1599.99,
     "category": "Cameras",
     "description": "Compact full-frame mirrorless camera with a 24.2 MP sensor and 4K video capabilities, perfect for versatile shooting.",
-    "image": "src/assets/Sony-7C.webp"
+    "image": "/assets/Sony-7C.webp"
   },
   {
     "id": 1,
@@ -13,7 +13,7 @@
     "price": 1999.99,
     "category": "Cameras",
     "description": "Full-frame mirrorless camera with a 24.2 MP sensor and 4K video capabilities, designed for exceptional image quality and portability.",
-    "image": "src/assets/Sony-7CR.webp"
+    "image": "/assets/Sony-7CR.webp"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "price": 499.99,
     "category": "Playstation",
     "description": "Next-gen console offering 4K graphics, fast load times, and an immersive DualSense controller, perfect for all gamers.",
-    "image": "src/assets/ps5.webp"
+    "image": "/assets/ps5.webp"
   },
   {
     "id": 3,
@@ -29,7 +29,7 @@
     "price": 89.99,
     "category": "Playstation",
     "description": "Haptic feedback and adaptive triggers for immersive PS5 gameplay, featuring a sleek design and long battery life.",
-    "image": "src/assets/dualsense-controller.webp"
+    "image": "/assets/dualsense-controller.webp"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "price": 549.99,
     "category": "Cameras",
     "description": "Compact camcorder that captures stunning 4K video with advanced stabilization and a flip screen, perfect for easy sharing and smooth footage.",
-    "image": "src/assets/Handycam 4K AX43A.webp"
+    "image": "/assets/Handycam 4K AX43A.webp"
   },
   {
     "id": 5,
@@ -45,7 +45,7 @@
     "price": 229.99,
     "category": "Cameras",
     "description": "Versatile wide-angle zoom lens featuring a fast f/2.8 aperture for exceptional image quality, making it ideal for landscapes and low-light photography.",
-    "image": "src/assets/FE 15-35mm.webp"
+    "image": "/assets/FE 15-35mm.webp"
   },
   {
     "id": 6,
@@ -53,7 +53,7 @@
     "price": 199.99,
     "category": "Audio",
     "description": "Premium true wireless earbuds offering exceptional sound quality and noise cancellation, featuring a sleek design and long battery life for an immersive listening experience.",
-    "image": "src/assets/Sony-WF1000XM4.webp"
+    "image": "/assets/Sony-WF1000XM4.webp"
   },
   {
     "id": 7,
@@ -61,7 +61,7 @@
     "price": 599.99,
     "category": "Cameras",
     "description": "High-performance camera featuring a full-frame sensor, advanced autofocus, and exceptional low-light capabilities, making it ideal for professional photography and videography.",
-    "image": "src/assets/Sony-9III.webp"
+    "image": "/assets/Sony-9III.webp"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "price": 799.99,
     "category": "Cameras",
     "description": "Versatile mirrorless camera with a 26 MP APS-C sensor, fast autofocus, and 4K video recording, ideal for photography and videography on the go.",
-    "image": "src/assets/Sony-6700.webp"
+    "image": "/assets/Sony-6700.webp"
   },
   {
     "id": 9,
@@ -77,7 +77,7 @@
     "price": 249.99,
     "category": "Audio",
     "description": "Premium over-ear noise-canceling headphones that offer exceptional sound quality, advanced noise cancellation, and long battery life for an immersive listening experience.",
-    "image": "src/assets/Sony-WH1000XM5.webp"
+    "image": "/assets/Sony-WH1000XM5.webp"
   },
   {
     "id": 10,
@@ -85,6 +85,6 @@
     "price": 599.99,
     "category": "Cameras",
     "description": "Compact mirrorless camera with a full-frame sensor, advanced autofocus, and 4K video recording, perfect for content creators and vloggers.",
-    "image": "src/assets/Sony-ZVE1.webp"
+    "image": "/assets/Sony-ZVE1.webp"
   }
 ]
