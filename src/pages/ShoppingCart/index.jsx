@@ -96,7 +96,7 @@ export default function ShoppingCart() {
           })}
           <div className="flex justify-center items-center w-full gap-x-10 h-24 p-4">
             <div className="text-2xl font-bold text-gray-800 dark:text-white">
-              Total: ${context.totalCart}
+              Total: ${context.totalCart.toFixed(2)}
             </div>
             <button
               type="button"

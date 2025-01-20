@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react";
+import data from "../utils/productsData.json"
 
 // Create the context
 export const MyContext = createContext();
@@ -14,19 +15,37 @@ export const MyContextProvider = ({ children }) => {
   const [filter, setFilter] = useState("all");
 
   // Define any functions or methods you need
-  const getProducts = async () => {
+  // const getProducts = async () => {
+  //   setLoading(true);
+  //   try {
+  //     // Fetch the products from an API
+  //     const response = await fetch(
+  //       "https://sony-ecommerce.onrender.com/api/products",
+  //       {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       }
+  //     );
+  //     const data = await response.json();
+  //     setProducts(data);
+  //     if (filter === "all") {
+  //       setFilteredProducts(data);
+  //     } else {
+  //       setFilteredProducts(
+  //         data.filter((product) => product.category === filter)
+  //       );
+  //     }
+  //   } catch (error) {
+  //     console.error("Error fetching products:", error);
+  //     setError(true);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+  const getProducts = () => {
     setLoading(true);
     try {
-      // Fetch the products from an API
-      const response = await fetch(
-        "https://sony-ecommerce.onrender.com/api/products",
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      const data = await response.json();
       setProducts(data);
       if (filter === "all") {
         setFilteredProducts(data);
@@ -41,7 +60,7 @@ export const MyContextProvider = ({ children }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }
 
   const addProductToCart = (id) => {
     const product = products.find((product) => product.id === id);
